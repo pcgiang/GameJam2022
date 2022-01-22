@@ -19,9 +19,9 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress))
         {
-            if(canBePressed)
+            if (canBePressed)
             {
                 gameObject.SetActive(false);
             }
@@ -30,15 +30,20 @@ public class EnemyAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Activator")
+        Debug.Log(other.gameObject.name);
+        ZoneController zone = other.gameObject.GetComponent<ZoneController>();
+        if (other.tag == "Activator")
         {
-            canBePressed = true;
+            if (zone.activated)
+            {
+                canBePressed = true;
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Activator")
+        if (other.tag == "Activator")
         {
             canBePressed = false;
         }

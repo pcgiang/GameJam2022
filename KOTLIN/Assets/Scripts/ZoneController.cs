@@ -5,6 +5,9 @@ using UnityEngine;
 public class ZoneController : MonoBehaviour
 {
     private SpriteRenderer theSR;
+    private RectTransform imgRectTransform;
+    private Vector3 mouseWorldPosition;
+    public bool activated;
     public Sprite defaultImage;
     public Sprite pressedImage;
 
@@ -14,20 +17,28 @@ public class ZoneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        activated = false;
+        imgRectTransform = GetComponent<RectTransform>();
         theSR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPosition.z = 0f;
+
+
         // changes sprite when pressed
-        if(Input.GetKeyDown(keyToPress)) 
+        if (RectTransformUtility.RectangleContainsScreenPoint(imgRectTransform, mouseWorldPosition))
         {
+            activated = true;
             theSR.sprite = pressedImage;
         }
 
-        if(Input.GetKeyUp(keyToPress))
+        if(!RectTransformUtility.RectangleContainsScreenPoint(imgRectTransform, mouseWorldPosition))
         {
+            activated = false;
             theSR.sprite = defaultImage;
         }
     }
