@@ -29,7 +29,6 @@ public abstract class Scroller : MonoBehaviour
             }
         } else
         {
-            // transform.position -= new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
             Move();
 
             if (Input.GetKeyDown(keyToPress))
@@ -44,9 +43,13 @@ public abstract class Scroller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Activator")
+        ZoneController zone = other.gameObject.GetComponent<ZoneController>();
+        if (other.tag == "Activator")
         {
-            canBePressed = true;
+            if (zone.activated)
+            {
+                canBePressed = true;
+            }
         }
     }
 
