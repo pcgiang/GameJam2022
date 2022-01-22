@@ -5149,3 +5149,147 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004725 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (743ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (256ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.1 MB.
+System memory in use after: 99.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2826.
+Total: 3.265200 ms (FindLiveObjects: 0.243600 ms CreateObjectMapping: 0.062100 ms MarkObjects: 2.927900 ms  DeleteObjects: 0.030500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6203.662795 seconds.
+  path: Assets/Scripts/Enemy Controller
+  artifactKey: Guid(e4d2c48891f90f1478b80605174227d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller using Guid(e4d2c48891f90f1478b80605174227d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fe42be17426a7e5a1402f7c68afb1f') in 0.015885 seconds 
+  Import took 0.019707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.534382 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyAttack.cs
+  artifactKey: Guid(71b6d6c78c6d5864b9b13dfcbf4d3a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyAttack.cs using Guid(71b6d6c78c6d5864b9b13dfcbf4d3a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cdbe732a1b0a518fd7e0a7b59a0e5d3') in 0.009978 seconds 
+  Import took 0.014318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.559473 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyFive.cs
+  artifactKey: Guid(aeccacb437b24374bb8b4c23737e0272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyFive.cs using Guid(aeccacb437b24374bb8b4c23737e0272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cd7f32fce4439608a9a0dc52863544') in 0.013574 seconds 
+  Import took 0.017617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.513426 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyFour.cs
+  artifactKey: Guid(d921a235f8c55fa4db7b60c851a42d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyFour.cs using Guid(d921a235f8c55fa4db7b60c851a42d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28bd5d5bfd576e775f4a6c31f3bd78a4') in 0.012997 seconds 
+  Import took 0.017741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.804607 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyOne.cs
+  artifactKey: Guid(35f87db67f5b76d41aacf3f287970c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyOne.cs using Guid(35f87db67f5b76d41aacf3f287970c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ccc57069d40d5bdcc389fb4d4897c6') in 0.014225 seconds 
+  Import took 0.018909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.507740 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemySeven.cs
+  artifactKey: Guid(1f069dde0a1d6734692d2ebe0bed3cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemySeven.cs using Guid(1f069dde0a1d6734692d2ebe0bed3cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9754dee494cf236334d7abbf5c15c04c') in 0.011123 seconds 
+  Import took 0.016180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.583108 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemySix.cs
+  artifactKey: Guid(69a1d3a59e96df84180bb4177a2971bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemySix.cs using Guid(69a1d3a59e96df84180bb4177a2971bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fd5578872ae42dc75f49f345743141') in 0.010409 seconds 
+  Import took 0.014948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.332054 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyThree.cs
+  artifactKey: Guid(c2b4ee776c6a367419ce70ea82aee4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyThree.cs using Guid(c2b4ee776c6a367419ce70ea82aee4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f218da40cebaa34503d151601a5f9db') in 0.010863 seconds 
+  Import took 0.015691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.487270 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyTwo.cs
+  artifactKey: Guid(ed9baec807079784cbe6e7fdd5fe1957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyTwo.cs using Guid(ed9baec807079784cbe6e7fdd5fe1957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbe62c04dd9e23575a9bd2f97364e83') in 0.009141 seconds 
+  Import took 0.014274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.341566 seconds.
+  path: Assets/Scripts/Enemy Controller/Scroller.cs
+  artifactKey: Guid(1f8758a82c80dad419fa8f6b160d3eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/Scroller.cs using Guid(1f8758a82c80dad419fa8f6b160d3eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce54ee760a3856aa4fe5a8af8a80b80') in 0.008760 seconds 
+  Import took 0.013485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.784830 seconds.
+  path: Assets/Scripts/Enemy Controller/EnemyEight.cs
+  artifactKey: Guid(91bd32f6201972f4393f38357ab26294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Controller/EnemyEight.cs using Guid(91bd32f6201972f4393f38357ab26294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf6ad63978673d3fa766a68c44a5bfd') in 0.010220 seconds 
+  Import took 0.015489 seconds .
+
