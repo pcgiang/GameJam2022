@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2039266753642458940}
   - component: {fileID: 2039266753642458942}
   - component: {fileID: 2039266753642458943}
+  - component: {fileID: -1667575148408994214}
   - component: {fileID: 2039266753642458937}
   m_Layer: 0
   m_Name: Isometric Diamond (2)
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039266753642458941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.24, y: -0.44, z: 1.1796726}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,13 +92,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039266753642458941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9baec807079784cbe6e7fdd5fe1957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   beatTempo: 120
   hasStarted: 0
+  keyToPress: 32
+  canBePressed: 0
+  assignedTime: 0
+--- !u!114 &-1667575148408994214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039266753642458941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c3839624023fd408f92ff9b65f9373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   keyToPress: 32
   canBePressed: 0
   assignedTime: 0

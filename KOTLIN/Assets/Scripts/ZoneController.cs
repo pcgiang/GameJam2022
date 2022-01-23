@@ -28,9 +28,6 @@ public class ZoneController : MonoBehaviour
         mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0f;
 
-        Debug.Log(mouseWorldPosition);
-
-
         // changes sprite when pressed
         if (RectTransformUtility.RectangleContainsScreenPoint(imgRectTransform, mouseWorldPosition))
         {
