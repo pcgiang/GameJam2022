@@ -12,33 +12,29 @@ public abstract class Scroller : MonoBehaviour
 
     public bool canBePressed;
 
+    double timeInstantiated;
+    public float assignedTime;
+
     // Start is called before the first frame update
     void Start()
     {
         beatTempo = beatTempo / 60f;
+        timeInstantiated = SongManager.GetAudioSourceTime();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!hasStarted)
-        {
-            if(Input.anyKeyDown)
-            {
-                hasStarted = true;
-            }
-        } else
-        {
-            Move();
+        Move();
 
-            if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress))
+      {
+          if(canBePressed)
           {
-              if(canBePressed)
-              {
-                  gameObject.SetActive(false);
-              }
+              gameObject.SetActive(false);
           }
-        }
+      }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
